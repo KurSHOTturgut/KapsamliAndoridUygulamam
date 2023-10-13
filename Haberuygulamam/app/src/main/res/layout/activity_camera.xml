@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:alpha="0.02"
+            android:background="@drawable/black_circle"
+            android:layout_marginTop="0dp"/>
+
+        <View
+            android:layout_width="193dp"
+            android:layout_height="193dp"
+            android:layout_gravity="center"
+            android:background="@drawable/white_circle"/>
+
+        <ImageView
+            android:id="@+id/kamerac"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/cameramresim"/>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/galeri"
+        android:layout_below="@id/framelayout"
+        android:layout_width="241dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:text="GALERİ"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+    <ImageView
+        android:id="@+id/cekilenyuklenenfoto"
+        android:layout_width="372dp"
+        android:layout_height="200dp"
+        android:src="@drawable/gorselonyuklemeresim"
+        android:layout_below="@id/galeri"
+        android:scaleType="fitXY"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/dosyayiyukle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/bottom_menu"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="18dp"
+        android:backgroundTint="@color/buttonarkplankoyugri"
+        android:drawableLeft="@drawable/baseline_upload_file_24"
+        android:drawableTint="@color/white"
+        android:gravity="left|center"
+        android:paddingLeft="100dp"
+        android:text="FOTOĞRAFI YÜKLE" />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/bottom_menu"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:background="@drawable/menualtinagirenrenk"
+        android:layout_marginEnd="0dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0177DB"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/camerahome"
+                android:layout_width="0dp"
+                android:onClick="camerahome"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/home"
+                android:scaleType="fitCenter"
+                android:layout_marginStart="5dp"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/cameralocation"
+                android:layout_width="0dp"
+                android:onClick="cameralocation"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/locationmenu"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/camerakutu"
+                android:layout_width="0dp"
+                android:onClick="camerakutu"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/kutu"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/cameracamera"
+                android:layout_width="0dp"
+                android:onClick="cameracamera"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/camera"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+            <ImageView
+                android:id="@+id/cameraBildirim"
+                android:layout_width="0dp"
+                android:onClick="camerabildirim"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/bildirimsayfasi"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/cameramessage"
+                android:layout_width="0dp"
+                android:onClick="cameramessage"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/message"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/cameraproife"
+                android:layout_width="0dp"
+                android:onClick="cameraprofile"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/proife"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

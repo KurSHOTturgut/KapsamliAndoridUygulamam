@@ -1,0 +1,300 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="#E9E9E9"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/usttekiImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/laconiclogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+
+    <LinearLayout
+        android:id="@+id/edittexler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/usttekiImageView"
+        android:layout_marginTop="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adınız"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/ptofileadEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soyadınız"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/profilesoyadEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/kullaniciaditextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittexler"
+        android:text="Kullanıcı Adınız"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/profilekullaniciAdiEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kullaniciaditextview"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edittext_rounded_bg"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/kullaniciepostaTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profilekullaniciAdiEditText"
+        android:text="E-Posta Adresiniz"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/profileePostaEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_rounded_bg"
+        android:padding="12dp"
+        android:layout_below="@id/kullaniciepostaTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        />
+    <TextView
+        android:id="@+id/kullanicitelnoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileePostaEditText"
+        android:text="Tel No"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/profiletelnoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_rounded_bg"
+        android:padding="12dp"
+        android:layout_below="@id/kullanicitelnoTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        />
+    <TextView
+        android:id="@+id/sifretextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Şifre"
+        android:layout_below="@id/profiletelnoEditText"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@id/sifretextview"
+        android:id="@+id/sifrelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_shadow_end_color"
+        app:endIconMode="password_toggle"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/profilesifreEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_rounded_bg"
+            android:padding="8dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:radius="8dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/bilgileriguncelle"
+        android:layout_below="@id/sifrelayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="BİLGİLERİ GÜNCELLE"
+        android:background="@drawable/registerkayitolbutton"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="1dp"
+        android:layout_marginTop="10dp"
+
+        />
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/bottom_menu"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:background="@drawable/menualtinagirenrenk"
+        android:layout_marginEnd="0dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0177DB"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/profilehome"
+                android:layout_width="0dp"
+                android:onClick="profilehome"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/home"
+                android:scaleType="fitCenter"
+                android:layout_marginStart="5dp"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/profilelocation"
+                android:layout_width="0dp"
+                android:onClick="profilelocation"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/locationmenu"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/profilekutu"
+                android:layout_width="0dp"
+                android:onClick="profilekutu"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/kutu"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/profilecamera"
+                android:layout_width="0dp"
+                android:onClick="profilecamera"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/camera"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+            <ImageView
+                android:id="@+id/profileBildirim"
+                android:layout_width="0dp"
+                android:onClick="profilebildirim"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/bildirimsayfasi"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/profilemessage"
+                android:layout_width="0dp"
+                android:onClick="profilemessage"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/message"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/profileproife"
+                android:layout_width="0dp"
+                android:onClick="profileprofile"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/proife"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

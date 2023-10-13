@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/bottom_menu"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:background="@drawable/menualtinagirenrenk"
+        android:layout_marginEnd="0dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0177DB"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/bildirimmain"
+                android:layout_width="0dp"
+                android:onClick="bildirimmain"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/home"
+                android:scaleType="fitCenter"
+                android:layout_marginStart="5dp"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/bildirimlocation"
+                android:layout_width="0dp"
+                android:onClick="bildirimlocation"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/locationmenu"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/bildirimkutu"
+                android:layout_width="0dp"
+                android:onClick="bildirimkuru"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/kutu"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/bildirimcamera"
+                android:layout_width="0dp"
+                android:onClick="bildirimcamera"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/camera"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+            <ImageView
+                android:id="@+id/bildirimbildirim"
+                android:layout_width="0dp"
+                android:onClick="bildirimbildirim"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/bildirimsayfasi"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/bildirimmessahe"
+                android:layout_width="0dp"
+                android:onClick="bildirimmessage"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/message"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/bildirimprofile"
+                android:layout_width="0dp"
+                android:onClick="bildirimprofile"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/proife"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

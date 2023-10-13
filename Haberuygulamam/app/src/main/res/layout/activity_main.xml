@@ -1,0 +1,236 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Diğer içerikler -->
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_menu">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="380dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/arabam"
+                    android:scaleType="fitXY"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="It is a long established fact that a reader"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:padding="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the ."
+                    android:layout_marginTop="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="380dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/telefon"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="It is a long established fact that a reader"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:padding="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the ."
+                    android:layout_marginTop="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="380dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/manzara"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="It is a long established fact that a reader"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:padding="16dp" />
+
+                <TextView
+                    android:id="@+id/textview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the ."
+                    android:layout_marginTop="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/bottom_menu"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:background="@drawable/menualtinagirenrenk"
+        android:layout_marginEnd="0dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0177DB"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/mainhome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="mainhome"
+                android:src="@drawable/home"
+                android:scaleType="fitCenter"
+                android:layout_marginStart="5dp"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/mainlocation"
+                android:layout_width="0dp"
+                android:onClick="mainlocation"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/locationmenu"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/mainkutu"
+                android:layout_width="0dp"
+                android:onClick="mainkutu"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/kutu"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/maincamera"
+                android:layout_width="0dp"
+                android:onClick="maincamera"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/camera"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+            <ImageView
+                android:id="@+id/mainBildirim"
+                android:layout_width="0dp"
+                android:onClick="mainBildirim"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/bildirimsayfasi"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/mainmessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="mainmessage"
+                android:src="@drawable/message"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/mainproife"
+                android:layout_width="0dp"
+                android:onClick="mainprofile"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/proife"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

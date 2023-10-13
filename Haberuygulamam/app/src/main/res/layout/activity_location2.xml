@@ -1,0 +1,236 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:alpha="0.03"
+            android:background="@drawable/black_circle"
+            android:layout_marginTop="0dp"/>
+
+        <View
+            android:layout_width="193dp"
+            android:layout_height="193dp"
+            android:layout_gravity="center"
+            android:background="@drawable/white_circle"/>
+
+        <ImageView
+            android:id="@+id/konumisaretiresim"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/locationlogo"/>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/KonumBulButton"
+        android:layout_below="@id/framelayout"
+        android:layout_width="241dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:text="KONUMUMU BUL"
+        android:layout_centerHorizontal="true" />
+
+
+    <LinearLayout
+        android:id="@+id/edittexler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/KonumBulButton"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enlem Değeri"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/enlemedittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/edittextakraplanacikgri"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boylam Değeri"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/boylamedittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/edittextakraplanacikgri"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/haritagelecek"
+        android:layout_width="372dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/bottom_menu"
+        android:layout_below="@id/edittexler"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        app:liteMode="false" />
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/bottom_menu"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:background="@drawable/menualtinagirenrenk"
+        android:layout_marginEnd="0dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0177DB"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/locationhome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:onClick="locationhome"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home"
+                android:tint="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/locationlocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="locationlocation"
+                android:scaleType="fitCenter"
+                android:src="@drawable/locationmenu"
+                android:tint="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/locationkutu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="locationkutu"
+                android:scaleType="fitCenter"
+                android:src="@drawable/kutu"
+                android:tint="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/locationcamera"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="locationcamera"
+                android:scaleType="fitCenter"
+                android:src="@drawable/camera"
+                android:tint="@android:color/white" />
+            <ImageView
+                android:id="@+id/locationBildirim"
+                android:layout_width="0dp"
+                android:onClick="locationbildirim"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/bildirimsayfasi"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/white"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/locationmessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="locationmessage"
+                android:scaleType="fitCenter"
+                android:src="@drawable/message"
+                android:tint="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/locationproife"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="locationprofie"
+                android:scaleType="fitCenter"
+                android:src="@drawable/proife"
+                android:tint="@android:color/white" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
